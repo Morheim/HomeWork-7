@@ -2,7 +2,7 @@
 #include "MyLib.h"
 #include <fstream>
 
-#define TRUE_OR_FALSE(entered_number, last_number) (entered_number >= 0 && entered_number < last_number) //ко 2-рому заданию
+#define TRUE_OR_FALSE(entered_number, last_number) (entered_number >= 0 && entered_number < last_number)
 #define SwapINT(a, b)int temp = a; a = b; b = temp;
 
 using namespace std;
@@ -29,13 +29,13 @@ void END()
 }
 
 #pragma pack(push, 1)
-struct PERSONAL //структура для 4-того задания.
+struct PERSONAL
 {
-    char FullName[255];   //ФИО сотрудника
-    char Street[255];     //Улица сотрудника
-    short House;          //Номер дома сотрудника
-    short Flat;           //Номер квартиры сотрудника
-    char Phone;           //Телефон сотрудника
+    char FullName[255];
+    char Street[255];
+    short House;
+    short Flat;
+    char Phone;
 };
 #pragma pack(pop)
 
@@ -71,7 +71,7 @@ int main()
 
         int entered_number;
         const int last_number = 3434;
-        cout << boolalpha; //стандартная команда, которая благодаря вызову bool выводит тебе тру, либо фалс.
+        cout << boolalpha;
         cout << "Enter the number you want to check: " << endl;
         cin >> entered_number;
         bool result = TRUE_OR_FALSE(entered_number, last_number);
